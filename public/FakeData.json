@@ -1,0 +1,222 @@
+[
+    {
+        "id": 1,
+        "ProductName": "Wireless Earbuds",
+        "BrandName": "SoundPro",
+        "ProductImage": "https://i.ibb.co/B4g482n/bluetooth-headset-3344347-1280.png",
+        "Description": "High-quality wireless earbuds with noise cancellation.",
+        "Price": 59.99,
+        "Category": "Electronics",
+        "Ratings": 4.5,
+        "ProductCreationDateTime": "2024-08-15T10:30:00Z"
+    },
+    {
+        "id": 2,
+        "ProductName": "Smartphone",
+        "BrandName": "TechWave",
+        "ProductImage": "https://i.ibb.co/1RdS8vH/smartphone-1894723-1280-1.jpg",
+        "Description": "Latest model smartphone with cutting-edge features.",
+        "Price": 799.99,
+        "Category": "Electronics",
+        "Ratings": 4.7,
+        "ProductCreationDateTime": "2024-08-15T11:00:00Z"
+    },
+    {
+        "id": 3,
+        "ProductName": "Gaming Laptop",
+        "BrandName": "GamerX",
+        "ProductImage": "https://i.ibb.co/9221jNS/Png-Item-1066644.jpg",
+        "Description": "High-performance gaming laptop with RGB keyboard.",
+        "Price": 1299.99,
+        "Category": "Computers",
+        "Ratings": 4.8,
+        "ProductCreationDateTime": "2024-07-15T11:15:00Z"
+    },
+    {
+        "id": 4,
+        "ProductName": "4K Television",
+        "BrandName": "ViewMax",
+        "ProductImage": "https://i.ibb.co/4S5265T/6c5693b2e1fbfd14be5fe75e1e64ff1f-1.jpg",
+        "Description": "Ultra HD 4K television with smart TV features.",
+        "Price": 499.99,
+        "Category": "Electronics",
+        "Ratings": 4.6,
+        "ProductCreationDateTime": "2024-08-15T11:45:00Z"
+    },
+    {
+        "id": 5,
+        "ProductName": "Bluetooth Speaker",
+        "BrandName": "SoundWave",
+        "ProductImage": "https://i.ibb.co/bFMVQ3R/speakers-4109274-1280.jpg",
+        "Description": "Portable Bluetooth speaker with deep bass.",
+        "Price": 29.99,
+        "Category": "Electronics",
+        "Ratings": 4.4,
+        "ProductCreationDateTime": "2024-08-15T12:00:00Z"
+    },
+    {
+        "id": 6,
+        "ProductName": "Smartwatch",
+        "BrandName": "FitTime",
+        "ProductImage": "https://i.ibb.co/Rbh4Xbt/ai-generated-7733733-1280.jpg",
+        "Description": "Wearable smartwatch with fitness tracking.",
+        "Price": 199.99,
+        "Category": "Wearables",
+        "Ratings": 4.3,
+        "ProductCreationDateTime": "2024-07-12T12:30:00Z"
+    },
+    {
+        "id":7,
+        "ProductName": "Running Shoes",
+        "BrandName": "SpeedTrack",
+        "ProductImage": "https://i.ibb.co/GJcWn2P/running-shoes-2661558-1280-1.jpg",
+        "Description": "Lightweight running shoes with excellent grip.",
+        "Price": 89.99,
+        "Category": "Footwear",
+        "Ratings": 4.7,
+        "ProductCreationDateTime": "2024-08-15T12:45:00Z"
+    },
+    {
+        "id": 8,
+        "ProductName": "Digital Camera",
+        "BrandName": "CaptureX",
+        "ProductImage": "https://i.ibb.co/Nghr4Sj/pexels-pixabay-51383-1.jpg",
+        "Description": "High-resolution digital camera with 20MP lens.",
+        "Price": 499.99,
+        "Category": "Cameras",
+        "Ratings": 4.5,
+        "ProductCreationDateTime": "2024-08-15T13:00:00Z"
+    },
+    {
+        "id": 9,
+        "ProductName": "Tablet",
+        "BrandName": "TabStar",
+        "ProductImage": "https://i.ibb.co/QJ1t6fQ/ipad-605420-1280-1.jpg",
+        "Description": "10-inch tablet with 128GB storage.",
+        "Price": 329.99,
+        "Category": "Tablets",
+        "Ratings": 4.6,
+        "ProductCreationDateTime": "2024-08-15T13:15:00Z"
+    },
+    {
+        "id": 10,
+        "ProductName": "Gaming Headset",
+        "BrandName": "AudioGamer",
+        "ProductImage": "https://i.ibb.co/tZMs47p/technology-7105517-1280.jpg",
+        "Description": "Surround sound gaming headset with noise-cancelling mic.",
+        "Price": 69.99,
+        "Category": "Accessories",
+        "Ratings": 4.4,
+        "ProductCreationDateTime": "2024-08-15T13:30:00Z"
+    },
+    {
+        "id": 11,
+        "ProductName": "Electric Kettle",
+        "BrandName": "QuickBoil",
+        "ProductImage": "https://i.ibb.co/grYHqdM/electric-kettle-6966011-1280.jpg",
+        "Description": "Fast-boil electric kettle with 1.7L capacity.",
+        "Price": 39.99,
+        "Category": "Kitchen Appliances",
+        "Ratings": 4.6,
+        "ProductCreationDateTime": "2024-08-15T14:00:00Z"
+    },
+    {
+        "id": 12,
+        "ProductName": "Blender",
+        "BrandName": "BlendMaster",
+        "ProductImage": "https://i.ibb.co/4RLPBhW/blender-10934-1280.jpg",
+        "Description": "High-power blender with 6 speed settings.",
+        "Price": 89.99,
+        "Category": "Kitchen Appliances",
+        "Ratings": 4.7,
+        "ProductCreationDateTime": "2024-08-15T14:15:00Z"
+    },
+    {
+        "id": 13,
+        "ProductName": "Office Chair",
+        "BrandName": "ErgoComfort",
+        "ProductImage": "https://i.ibb.co/zr1Yn4n/ai-generated-8895614-1280.jpg",
+        "Description": "Ergonomic office chair with lumbar support.",
+        "Price": 159.99,
+        "Category": "Furniture",
+        "Ratings": 4.8,
+        "ProductCreationDateTime": "2024-08-15T14:30:00Z"
+    },
+    {
+        "id": 14,
+        "ProductName": "Desk Lamp",
+        "BrandName": "BrightDesk",
+        "ProductImage": "https://i.ibb.co/qk9f358/table-2587598-1280.jpg",
+        "Description": "Adjustable LED desk lamp with touch control.",
+        "Price": 49.99,
+        "Category": "Lighting",
+        "Ratings": 4.5,
+        "ProductCreationDateTime": "2024-08-15T14:45:00Z"
+    },
+    {
+        "id": 15,
+        "ProductName": "Air Purifier",
+        "BrandName": "PureAir",
+        "ProductImage": "https://i.ibb.co/T1DJRLy/smart-plant-purifier-2397587-1280.jpg",
+        "Description": "Compact air purifier with HEPA filter.",
+        "Price": 129.99,
+        "Category": "Home Appliances",
+        "Ratings": 4.6,
+        "ProductCreationDateTime": "2024-08-15T15:00:00Z"
+    },
+    {
+        "id": 16,
+        "ProductName": "Fitness Tracker",
+        "BrandName": "FitTrack",
+        "ProductImage": "https://i.ibb.co/TrZsjtK/fitness-band-4710206-1280.jpg",
+        "Description": "Waterproof fitness tracker with heart rate monitor.",
+        "Price": 69.99,
+        "Category": "Wearables",
+        "Ratings": 4.3,
+        "ProductCreationDateTime": "2024-08-15T15:15:00Z"
+    },
+    {
+        "id": 17,
+        "ProductName": "Yoga Mat",
+        "BrandName": "YogaFlex",
+        "ProductImage": "https://i.ibb.co/fqKkYnN/woman-2562216-1280.jpg",
+        "Description": "Non-slip yoga mat with cushioning.",
+        "Price": 24.99,
+        "Category": "Fitness",
+        "Ratings": 4.4,
+        "ProductCreationDateTime": "2024-08-15T15:30:00Z"
+    },
+    {
+        "id": 18,
+        "ProductName": "Electric Toothbrush",
+        "BrandName": "BrightSmile",
+        "ProductImage": "https://i.ibb.co/kKD2kqJ/toothbrush-2127681-1280.jpg",
+        "Description": "Rechargeable electric toothbrush with 5 modes.",
+        "Price": 59.99,
+        "Category": "Personal Care",
+        "Ratings": 4.7,
+        "ProductCreationDateTime": "2024-08-15T16:00:00Z"
+    },
+    {
+        "id": 19,
+        "ProductName": "Hair Dryer",
+        "BrandName": "HairPro",
+        "ProductImage": "https://i.ibb.co/jb4yfS1/hair-dryer-1185351-1280.jpg",
+        "Description": "Ionic hair dryer with fast drying technology.",
+        "Price": 79.99,
+        "Category": "Personal Care",
+        "Ratings": 4.6,
+        "ProductCreationDateTime": "2024-08-15T16:15:00Z"
+    },
+    {
+        "id": 20,
+        "ProductName": "Coffee Maker",
+        "BrandName": "BrewMaster",
+        "ProductImage": "https://i.ibb.co/NWMGGrZ/coffee-machine-5171445-1280.jpg",
+        "Description": "12-cup programmable coffee maker with timer.",
+        "Price": 99.99,
+        "Category": "Kitchen Appliances",
+        "Ratings": 4.5,
+        "ProductCreationDateTime": "2024-08-15T16:30:00Z"
+    }
+]
