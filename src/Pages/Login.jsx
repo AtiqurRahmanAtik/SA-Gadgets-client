@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import photo from "../assets/login.jpg";
 import { useContext } from "react";
 import { authContext } from "../AuthProvider/AuthProvider";
@@ -8,6 +8,7 @@ import Swal from "sweetalert2";
 const Login = () => {
 
     const {singIn} = useContext(authContext);
+    const navigate = useNavigate();
 
     // handleSingIn
     const handleSingIn =(e)=>{
@@ -22,7 +23,7 @@ const Login = () => {
 
        singIn(email,password)
         .then(result=> {
-            
+
             if(result){
                 Swal.fire({
                     position: "top-end",
@@ -32,6 +33,9 @@ const Login = () => {
                     timer: 1500
                   });
             }
+
+            
+            navigate('/');
             console.log(result);
         })
         .catch(err=>{

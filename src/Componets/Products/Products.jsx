@@ -1,9 +1,11 @@
+import { Link, useLoaderData } from "react-router-dom";
 
 
 const Products = ({item}) => {
-    console.log(item);
+    // console.log(item);
+  
 
-    const {ProductName,BrandName,ProductImage,Description,Price,Category,Ratings,ProductCreationDateTime} = item;
+    const {id,ProductName,BrandName,ProductImage,Description,Price,Category,Ratings,ProductCreationDateTime} = item;
 
 
     return (
@@ -18,7 +20,8 @@ const Products = ({item}) => {
     <h2 className="card-title"> {ProductName}</h2>
     <p>{Description.slice(0,30)}</p>
     <div className="card-actions mx-auto ">
-      <button className="btn btn-primary">Buy Now</button>
+     
+     <Link to={`${id}`}>  <button className="btn btn-primary">Buy Now</button></Link>
     </div>
   </div>
 </div>
