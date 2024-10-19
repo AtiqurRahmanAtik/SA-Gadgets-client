@@ -1,16 +1,19 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import photo from "../assets/RegisterForm.jpg";
 import { useContext } from "react";
 import { authContext } from "../AuthProvider/AuthProvider";
 import Swal from "sweetalert2";
+import { FcGoogle } from "react-icons/fc";
 
 
 
 const Register = () => {
 
-    const {singUp} = useContext(authContext);
+    const {singUp,googleSingUp} = useContext(authContext);
+     
+    const navigate = useNavigate();
 
-
+    // HandleRegister
     const handleRegister = (e)=>{
         e.preventDefault();
 
@@ -42,6 +45,39 @@ const Register = () => {
         })
 
     }
+
+
+
+    // handleGoogle
+    const handleGoogle = ()=>{
+      console.log('google login');
+      
+
+      googleSingUp()
+      .then(result=> {
+
+        if(result){
+          Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Successfully Login With Google",
+            showConfirmButton: false,
+            timer: 1500
+          });
+        }
+
+        navigate('/');
+
+        console.log(result.user);
+      })
+      
+      .catch(err=>{
+        console.log(err);
+      })
+    }
+
+
+
 
     return (
         <div>
@@ -88,11 +124,26 @@ const Register = () => {
         <input type="password" name="password" placeholder="password" className="input input-bordered" required />
       
       </div>
-      <div className="form-control mx-auto mt-6">
+      <div className="form-control mx-auto mt-3">
       
     <button className="lg:w-80 btn btn-primary text-2xl">Register</button>
       </div>
     </form>
+
+
+      <div className="">
+        <h1 className="text-2xl text-center font-bold">Using this Way</h1>
+
+
+        <div className=" text-center my-2">
+          
+          <button onClick={handleGoogle} className="btn bg-green-500 text-center lg:w-2/5">
+            
+          <FcGoogle className="text-3xl"/> <span className="text-3xl "> Google</span> </button>
+        </div>
+
+      </div>
+
 
     <div className="my-5">
       <h1 className="text-xl lg:text-2xl text-center font-medium capitalize">have an account ? please 

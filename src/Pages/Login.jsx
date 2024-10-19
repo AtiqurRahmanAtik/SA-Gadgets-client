@@ -3,11 +3,12 @@ import photo from "../assets/login.jpg";
 import { useContext } from "react";
 import { authContext } from "../AuthProvider/AuthProvider";
 import Swal from "sweetalert2";
+import { FcGoogle } from "react-icons/fc";
 
 
 const Login = () => {
 
-    const {singIn} = useContext(authContext);
+    const {singIn,googleSingUp} = useContext(authContext);
     const navigate = useNavigate();
 
     // handleSingIn
@@ -41,6 +42,34 @@ const Login = () => {
         .catch(err=>{
             console.log(err);
         })
+
+    }
+
+
+    const handleGoogle = ()=>{
+      console.log('google singIN');
+      
+      googleSingUp()
+      .then(result=> {
+
+        if(result){
+          Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Successfully Login With Google",
+            showConfirmButton: false,
+            timer: 1500
+          });
+        }
+
+        navigate('/');
+
+        console.log(result.user);
+      })
+      
+      .catch(err=>{
+        console.log(err);
+      })
 
     }
 
@@ -89,6 +118,23 @@ const Login = () => {
     <button className="lg:w-80 btn btn-primary text-2xl">Login</button>
       </div>
     </form>
+
+
+    {/* google button */}
+    <div className="">
+        <h1 className="text-2xl text-center font-bold">Using this Way</h1>
+
+
+        <div className=" text-center my-2">
+          
+          <button onClick={handleGoogle} className="btn bg-green-500 text-center lg:w-2/5">
+            
+          <FcGoogle className="text-3xl"/> <span className="text-3xl "> Google</span> </button>
+        </div>
+
+      </div>
+
+
 
     <div className="my-5">
       <h1 className="text-xl lg:text-2xl text-center font-medium capitalize">Do not  have an account ? please 
