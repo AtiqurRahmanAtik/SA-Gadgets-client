@@ -1,7 +1,17 @@
+import { useContext } from "react";
 import {  Link, NavLink } from "react-router-dom";
+import { authContext } from "../../AuthProvider/AuthProvider";
 
 
 const NavigationBar = () => {
+
+    const {user,userSignOut} = useContext(authContext);
+    console.log(user);
+
+    const handleSingOut = () =>{
+      userSignOut();
+    }
+
 
     const links = <>
        <NavLink to='/'>   <li className="text-2xl font-medium"><a>Home </a></li></NavLink>
@@ -13,6 +23,7 @@ const NavigationBar = () => {
 
 
     return (
+      
         <div className="navbar bg-orange-400">
         <div className="navbar-start">
           <div className="dropdown">
@@ -49,7 +60,44 @@ const NavigationBar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-        <Link to='/login'>   <a className="btn">Login</a></Link>
+      
+
+        
+        {/* login Button */}
+     <div>
+      {
+        !user?   <Link to='/login'>   <a className="btn bg-blue-500">Login</a></Link>: 
+
+        <div className="dropdown dropdown-end mx-auto">
+             <div>
+            <h1>{user.displayName}</h1>
+          </div>
+        <div tabIndex={0}  role="button" className="btn btn-ghost btn-circle avatar">
+          <div className="w-10 rounded-full ">
+            <img
+              alt="Tailwind CSS Navbar component"
+              src={user.photoURL} />
+          </div>
+
+       
+        </div>
+  
+        <ul
+          tabIndex={0}
+          className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+          <li>
+            <a className="justify-between">
+              Profile
+            
+            </a>
+          </li>
+          <li><a>Settings</a></li>
+          <li> <button onClick={handleSingOut}>Logout</button></li>
+        </ul>
+      </div>
+      }
+     </div>
+     
         </div>
       </div>
     );

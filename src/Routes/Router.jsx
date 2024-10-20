@@ -23,7 +23,7 @@ export const router = createBrowserRouter([
         {
           path: '/:id',
           element: <MoreDetails></MoreDetails>,
-         loader: ({params})=> fetch(`../../public/FakeData.json/:${params.id}`)
+         loader: ({params})=> fetch(`../../public/FakeData.json/${params.id}`)
          },
 
         // {

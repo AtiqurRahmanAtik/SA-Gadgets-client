@@ -1,4 +1,4 @@
-import { Link, useLoaderData } from "react-router-dom";
+import { Link, } from "react-router-dom";
 
 
 const Products = ({item}) => {
@@ -21,7 +21,7 @@ const Products = ({item}) => {
     <p>{Description.slice(0,30)}</p>
     <div className="card-actions mx-auto ">
      
-     <Link to={`${id}`}>  <button className="btn btn-primary">Buy Now</button></Link>
+     <Link to={`/${id}`}>  <button className="btn btn-primary">Buy Now</button></Link>
     </div>
   </div>
 </div>

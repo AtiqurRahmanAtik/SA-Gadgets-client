@@ -9,7 +9,7 @@ import { FcGoogle } from "react-icons/fc";
 
 const Register = () => {
 
-    const {singUp,googleSingUp} = useContext(authContext);
+    const {singUp,googleSingUp,facebookSingIn} = useContext(authContext);
      
     const navigate = useNavigate();
 
@@ -50,7 +50,7 @@ const Register = () => {
 
     // handleGoogle
     const handleGoogle = ()=>{
-      console.log('google login');
+      // console.log('google login');
       
 
       googleSingUp()
@@ -70,10 +70,38 @@ const Register = () => {
 
         console.log(result.user);
       })
-      
+
       .catch(err=>{
         console.log(err);
       })
+    }
+
+
+    const handleFacebook = ()=>{
+      console.log('login facebook');
+      
+     facebookSingIn()
+     .then(result=> {
+
+       if(result){
+         Swal.fire({
+           position: "top-end",
+           icon: "success",
+           title: "Successfully Login With Facebook",
+           showConfirmButton: false,
+           timer: 2000
+         });
+       }
+
+       navigate('/');
+
+       console.log(result.user);
+     })
+
+     .catch(err=>{
+       console.log(err);
+     })
+
     }
 
 
@@ -141,6 +169,15 @@ const Register = () => {
             
           <FcGoogle className="text-3xl"/> <span className="text-3xl "> Google</span> </button>
         </div>
+
+        
+        <div className=" text-center my-2">
+          
+          <button onClick={handleFacebook} className="btn bg-green-500 text-center lg:w-2/5">
+            
+          <FcGoogle className="text-3xl"/> <span className="text-3xl "> Facebook</span> </button>
+        </div>
+
 
       </div>
 
