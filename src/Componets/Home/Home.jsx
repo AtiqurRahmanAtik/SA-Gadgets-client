@@ -36,7 +36,8 @@ const Home = () => {
               <h1 className="animate__animated animate__bounce text-3xl font-bold text-center capitalize">our latest product : </h1>
 
 
-                   
+
+                  <h1 className="animate__animated animate__bounce text-3xl font-bold text-center capitalize">our latest product : </h1>    
  
                  {/* main */}
             <div className="grid gap-3 gird-cols-1 lg:grid-cols-3 my-9 bg-gray-300 p-5">
