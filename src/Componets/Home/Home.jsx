@@ -36,7 +36,6 @@ const Home = () => {
               <h1 className="animate__animated animate__bounce text-3xl font-bold text-center capitalize">our latest product : </h1>
 
 
-              <h1 className="animate__animated animate__bounce text-3xl font-bold text-center capitalize">our latest product : </h1>
             
  
                  {/* main */}
